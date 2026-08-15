@@ -1,97 +1,134 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%" style="background-color: #0d0d0d; font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-  <defs>
-    <!-- Gradiente sutil para a barra de título -->
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1c1c1e" />
-      <stop offset="100%" stop-color="#151517" />
-    </linearGradient>
-    <!-- Gradiente para a imagem de fundo (simula a foto escura) -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#000000" />
-      <stop offset="100%" stop-color="#111111" />
-    </linearGradient>
-  </defs>
+<img width="254" height="150" alt="deepseek_svg_20260815_cb5bcb" src="https://github.com/user-attachments/assets/bc788a93-edf9-47d4-8bfb-6472818e088d" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650" width="100%" height="100%" style="background-color: #1a1b26; font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace; color: #c0caf5;">
+  <style>
+    .cyan { fill: #7dcfff; }
+    .green { fill: #9ece6a; }
+    .yellow { fill: #e0af68; }
+    .red { fill: #f7768e; }
+    .magenta { fill: #bb9af7; }
+    .white { fill: #c0caf5; }
+    .gray { fill: #565f89; }
+    .orange { fill: #ff9e64; }
+    .key { fill: #7dcfff; font-weight: bold; }
+    .val { fill: #e0af68; }
+    .sep { fill: #565f89; }
+    .stat { fill: #c0caf5; }
+  </style>
 
-  <!-- Fundo Principal -->
-  <rect width="1200" height="750" fill="url(#bgGrad)" />
+  <!-- Fundo -->
+  <rect width="1100" height="650" fill="#1a1b26" />
 
-  <!-- Barra Superior -->
-  <rect x="0" y="0" width="1200" height="45" fill="url(#titleGrad)" stroke="#333" stroke-width="0.5" />
-  
-  <!-- Botões da Janela (Mac) -->
-  <circle cx="25" cy="22" r="6" fill="#ff5f57" />
-  <circle cx="48" cy="22" r="6" fill="#febc2e" />
-  <circle cx="71" cy="22" r="6" fill="#28c840" />
+  <!-- ================= COLUNA ESQUERDA: ASCII ART DA MÃO/ROSTO ================= -->
+  <g transform="translate(30, 50)" font-size="11" letter-spacing="2" line-height="1.2">
+    <text x="0" y="20" class="gray">                    .:</text>
+    <text x="0" y="35" class="cyan">                  *%%%#</text>
+    <text x="0" y="50" class="cyan">                 %@%@@#</text>
+    <text x="0" y="65" class="white">               =: .*: @@%@@%</text>
+    <text x="0" y="80" class="white">              **#*+@%%%@@%@@=</text>
+    <text x="0" y="95" class="white">             %@%#%# * @@@%@@%</text>
+    <text x="0" y="110" class="yellow">           %@@@#   . @@@#** %@@@=</text>
+    <text x="0" y="125" class="yellow">          %@@@=     - : @@%%** =@@@+</text>
+    <text x="0" y="140" class="yellow">         %@@@%       . : *%%*%%@@%</text>
+    <text x="0" y="155" class="green">       %@@@@@  :      ***** %@@@#</text>
+    <text x="0" y="170" class="green">      %@%@@@#           @@%@@%@@@</text>
+    <text x="0" y="185" class="green">     %@@%@@#            @@%@@%@@@</text>
+    <text x="0" y="200" class="magenta">    %@@%@@#             %%%%%%%%</text>
+    <text x="0" y="215" class="magenta">    :@@%@@#          : @@%@@%@@@</text>
+    <text x="0" y="230" class="magenta">      :@@@@          : @@%@@%@@@</text>
+    <text x="0" y="245" class="white">        .@@%           : @@%@@%@@@</text>
+    <text x="0" y="260" class="white">          @@@           : *@@@@@@*</text>
+    <text x="0" y="275" class="white">            *           = @@@@=</text>
+    <text x="0" y="290" class="gray">                      : ---</text>
+  </g>
 
-  <!-- Caminho do Terminal -->
-  <text x="600" y="27" fill="#aaaaaa" font-size="13" text-anchor="middle" font-family="monospace">mumitacho.com.br — % ./profile.sh --live</text>
-
-  <!-- Linha divisória -->
-  <line x1="0" y1="45" x2="1200" y2="45" stroke="#333" stroke-width="1" />
-
-  <!-- ================= CONTEÚDO PRINCIPAL ================= -->
-  
-  <!-- Coluna Esquerda: Foto da Mão (Renderizada em cima da outra) -->
-  <!-- Você precisa substituir 'file:///...' pela URL real da sua imagem da mão -->
-  <image href="file:///C:/Users/Downloads/segunda%20imagem.jpg" x="70" y="70" width="400" height="650" preserveAspectRatio="xMidYMid slice" opacity="0.85" />
-
-  <!-- Coluna Direita: Informações -->
-  <g transform="translate(520, 70)">
+  <!-- ================= COLUNA DIREITA: INFORMAÇÕES ================= -->
+  <g transform="translate(380, 50)" font-size="13">
     
-    <!-- Nome e Role -->
-    <text x="0" y="40" fill="#ffffff" font-size="48" font-weight="bold" letter-spacing="1">Luis Gustavo</text>
-    <text x="0" y="75" fill="#00ffcc" font-size="32" font-weight="bold">(Mumitacho)</text>
-    <rect x="0" y="95" width="60" height="4" fill="#00ffcc" rx="2" />
-    <text x="0" y="135" fill="#b0b0b0" font-size="22" font-weight="500">UI/UX Design, Frontend</text>
-    <text x="0" y="165" fill="#888888" font-size="16">Londrina, Paraná, Brasil</text>
+    <!-- Cabeçalho -->
+    <text x="0" y="25" class="cyan">mumitacho@profile</text>
+    <text x="190" y="25" class="gray">----------------------------</text>
+    
+    <!-- OS -->
+    <text x="0" y="55" class="key">OS:</text>
+    <text x="190" y="55" class="val">Windows 11 / Ubuntu (WSL)</text>
+    
+    <!-- Uptime (baseado em experiência) -->
+    <text x="0" y="75" class="key">Uptime:</text>
+    <text x="190" y="75" class="val">15 years, 10 months, 15 days</text>
+    
+    <!-- Host -->
+    <text x="0" y="95" class="key">Host:</text>
+    <text x="190" y="95" class="val">Londrina, Paraná, BR</text>
+    
+    <!-- Kernel/Skills -->
+    <text x="0" y="115" class="key">Skillset:</text>
+    <text x="190" y="115" class="val">UI/UX Design, Frontend</text>
+    
+    <!-- Tools -->
+    <text x="0" y="135" class="key">Tools:</text>
+    <text x="190" y="135" class="val">Figma, VSCode, Adobe Premiere</text>
+
+    <!-- Linha divisória -->
+    <text x="0" y="165" class="sep">---------------------------------------</text>
+
+    <!-- Linguagens Aplicação -->
+    <text x="0" y="195" class="key">Languages.Application:</text>
+    <text x="190" y="195" class="val">Python, JavaScript, SQL, HTML/CSS</text>
+    
+    <!-- Linguagens Sistemas -->
+    <text x="0" y="215" class="key">Languages.Systems:</text>
+    <text x="190" y="215" class="val">Delphi, PHP, React, N8N</text>
+    
+    <!-- Idiomas -->
+    <text x="0" y="235" class="key">Languages.Spoken:</text>
+    <text x="190" y="235" class="val">Português (Nativo), Inglês (Intermed.)</text>
+
+    <!-- Hobbies / Competências -->
+    <text x="0" y="265" class="key">Hobbies.Software:</text>
+    <text x="190" y="265" class="val">Data Science, IA, Marketing Digital</text>
+    
+    <text x="0" y="285" class="key">Hobbies.Creative:</text>
+    <text x="190" y="285" class="val">Edição de Vídeo, Direct Response</text>
+    
+    <text x="0" y="305" class="key">Hobbies.Data:</text>
+    <text x="190" y="305" class="val">SQL, Power BI, Automação (N8N)</text>
+
+    <!-- Linha divisória -->
+    <text x="0" y="335" class="sep">---------------------------------------</text>
 
     <!-- Contato -->
-    <text x="0" y="210" fill="#00ffcc" font-size="15" font-weight="bold">CONTATO</text>
-    <rect x="0" y="220" width="180" height="1" fill="#333" />
+    <text x="0" y="365" class="key">Portfolio.Link:</text>
+    <text x="190" y="365" class="val">munitacho.com.br</text>
     
-    <text x="0" y="250" fill="#dcdcdc" font-size="14">📧 munitacho.com.br</text>
-    <text x="0" y="275" fill="#dcdcdc" font-size="14">📷 @mumitacho</text>
-    <text x="0" y="300" fill="#dcdcdc" font-size="14">🐙 github.com/mumitacho</text>
+    <text x="0" y="385" class="key">Email.Work:</text>
+    <text x="190" y="385" class="val">luisgustavo_peetre@hotmail.com</text>
+    
+    <text x="0" y="405" class="key">Instagram:</text>
+    <text x="190" y="405" class="val">@mumitacho</text>
+    
+    <text x="0" y="425" class="key">Github:</text>
+    <text x="190" y="425" class="val">github.com/mumitacho</text>
 
-    <!-- Formação -->
-    <text x="0" y="350" fill="#00ffcc" font-size="15" font-weight="bold">FORMAÇÃO</text>
-    <rect x="0" y="360" width="180" height="1" fill="#333" />
-    
-    <text x="0" y="390" fill="#e0e0e0" font-size="13">🎓 MBA Data Science, IA e Analytics</text>
-    <text x="20" y="410" fill="#888" font-size="12">USP (início: 10/2026)</text>
-    <text x="0" y="440" fill="#e0e0e0" font-size="13">🎓 Pós-grad. Análise, Proj. e Ger. de Sist.</text>
-    <text x="20" y="460" fill="#888" font-size="12">Anhanguera (concluída: 07/2026)</text>
-    <text x="0" y="490" fill="#e0e0e0" font-size="13">🎓 Graduação Análise e Desenvolvimento</text>
-    <text x="20" y="510" fill="#888" font-size="12">Unopar (2023 – 2025)</text>
-    <text x="0" y="540" fill="#e0e0e0" font-size="13">🔧 Técnico em Mecatrônica</text>
-    <text x="20" y="560" fill="#888" font-size="12">Colégio CEEP Castaldi (2016 – 2019)</text>
+    <!-- Linha divisória -->
+    <text x="0" y="455" class="sep">---------------------------------------</text>
 
-    <!-- Habilidades (Tags) -->
-    <text x="0" y="600" fill="#00ffcc" font-size="15" font-weight="bold">COMPETÊNCIAS</text>
-    <rect x="0" y="610" width="180" height="1" fill="#333" />
+    <!-- GitHub Stats / Formação -->
+    <text x="0" y="485" class="key">Acadêmico:</text>
+    <text x="190" y="485" class="stat">USP (MBA IA), Anhanguera (Pós), Unopar (Grad.)</text>
     
-    <g transform="translate(0, 630)">
-      <rect x="0" y="0" width="85" height="22" fill="#2a2a2a" rx="12" />
-      <text x="42" y="15" fill="#00ffcc" font-size="11" text-anchor="middle">Meta Ads</text>
-      
-      <rect x="95" y="0" width="90" height="22" fill="#2a2a2a" rx="12" />
-      <text x="140" y="15" fill="#00ffcc" font-size="11" text-anchor="middle">Google Ads</text>
-      
-      <rect x="195" y="0" width="65" height="22" fill="#2a2a2a" rx="12" />
-      <text x="227" y="15" fill="#00ffcc" font-size="11" text-anchor="middle">UI/UX</text>
-      
-      <rect x="270" y="0" width="75" height="22" fill="#2a2a2a" rx="12" />
-      <text x="307" y="15" fill="#00ffcc" font-size="11" text-anchor="middle">SQL/Python</text>
-      
-      <rect x="0" y="30" width="100" height="22" fill="#2a2a2a" rx="12" />
-      <text x="50" y="45" fill="#00ffcc" font-size="11" text-anchor="middle">Premiere</text>
-      
-      <rect x="110" y="30" width="85" height="22" fill="#2a2a2a" rx="12" />
-      <text x="152" y="45" fill="#00ffcc" font-size="11" text-anchor="middle">WordPress</text>
-      
-      <rect x="205" y="30" width="95" height="22" fill="#2a2a2a" rx="12" />
-      <text x="252" y="45" fill="#00ffcc" font-size="11" text-anchor="middle">Direct Response</text>
-    </g>
+    <!-- Stats Fictícios para estética -->
+    <text x="0" y="510" class="key">Repos:</text>
+    <text x="80" y="510" class="stat">15</text>
+    <text x="130" y="510" class="key">Stars:</text>
+    <text x="180" y="510" class="stat">24</text>
+
+    <text x="0" y="530" class="key">Commits:</text>
+    <text x="80" y="530" class="stat">612</text>
+    <text x="130" y="530" class="key">Followers:</text>
+    <text x="210" y="530" class="stat">12</text>
+    
+    <text x="0" y="550" class="key">LOC:</text>
+    <text x="80" y="550" class="stat">45,500 ( +87.1K, -28.2K )</text>
 
   </g>
 </svg>
